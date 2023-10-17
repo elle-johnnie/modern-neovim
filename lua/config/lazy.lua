@@ -18,12 +18,11 @@ require("lazy").setup {
     { import = "plugins" },
     { import = "plugins.ui" },
     { import = "plugins.notes" },
-    { import = "plugins.ai" },
     { import = "pde" },
   },
   defaults = { lazy = true, version = nil },
   install = { missing = true, colorscheme = { "tokyonight", "gruvbox" } },
-  dev = { patterns = jit.os:find "Windows" and {} or { "alpha2phi" } },
+  dev = { patterns = jit.os:find "Windows" and {} or { "ljmjohns" } },
   checker = { enabled = true },
   performance = {
     cache = {
@@ -36,7 +35,7 @@ require("lazy").setup {
         "matchparen",
         "tarPlugin",
         "tohtml",
-        "tutor",
+        -- "tutor",
         "zipPlugin",
         -- "netrwPlugin",
       },
